@@ -1,0 +1,33 @@
+<div class="contactsForm">
+    <div class="row">
+        <div class="col-md-4"></div>
+        <div class="col-md-4">
+            <input type="button" class="btn btn-default" value="Add" onclick="displayForm('{}')">
+        </div>
+        <div class="col-md-4"></div>
+    </div>
+    <div class="row">
+        <div class="col-md-2 text-center"><strong>First Name</strong></div>
+        <div class="col-md-2 text-center"><strong>Last Name</strong></div>
+        <div class="col-md-2 text-center"><strong>Email</strong></div>
+        <div class="col-md-2 text-center"><strong>Phone</strong></div>
+        <div class="col-md-2 text-center"><strong>Work Phone</strong></div>
+        <div class="col-md-2 text-center"><strong>Actions</strong></div>
+       
+    </div>
+    
+</div>
+
+{#contactList}
+        <div class="row">
+    <div class="col-md-2 text-center" style="background-color:whitesmoke;">{fname}</div>
+    <div class="col-md-2 text-center" style="background-color:whitesmoke;">{lname}</div>
+    <div class="col-md-2 text-center" style="background-color:whitesmoke;">{email}</div>
+    <div class="col-md-2" style="background-color:whitesmoke;">{phone}</div>
+    <div class="col-md-2 text-center" style="background-color:whitesmoke;">{wphone}</div>
+    <div class="col-md-2 text-center">
+        <input type="button" class="btn btn-success" value="Edit" id="edit2" onclick="editContact({id});"> &nbsp; &nbsp;
+        <input type="button" value="Delete" class="btn btn-danger" id="delete2" onclick="deleteContact({id});">
+    </div>
+</div>
+    {/contactList}

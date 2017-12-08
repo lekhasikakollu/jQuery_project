@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Contacts App</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/dustjs-linkedin/2.7.5/dust-core.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/style1.css">
+    <script src="js/contactlist.js"></script>
+    <script src="js/validations.js"></script>
+    <script src="js/formDisplay.js"></script>
+    <script src="js/addContact.js"></script>
+    <script src="js/allContacts.js"></script>
+    <script src="js/jquery.debug.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            $('div').warning();
+            $('p').warning();
+        });
+    </script>
+</head>
+
+<body>
+    <div id='header'>
+        <ul>
+            <li>
+                <a href="#Home" onclick="loadMyPage('contactList')">Home</a>
+            </li>
+            <li>
+                <a href="#Education" onclick="loadMyPage('education')">Education</a>
+            </li>
+            <li>
+                <a href="#Experience" onclick="loadMyPage('experience')">Experience</a>
+            </li>
+            <li>
+                <a href="#Skills" onclick="loadMyPage('skills')">Skills</a>
+            </li>
+        </ul>
+    </div>
+    <br>
+    <br>
+    <div id='main'>
+        Loading...
+    </div>
+    <hr>
+    <hr>
+    <div id='footer'>
+        All Rights Reserved &copy 2017
+    </div>
+</body>
+
+</html>
